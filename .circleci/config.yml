@@ -22,6 +22,9 @@ jobs:
           name: Echo Path
           command: go env
       - run:
+          name: Initial Go
+          command: go mod init github.com/chudjane-scg/kafka
+      - run:
           name: Install Dependencies
           command: go get ./...
       - save_cache:
