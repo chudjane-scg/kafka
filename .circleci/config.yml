@@ -16,8 +16,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install Dependencies
-          command: go get ./...
+          name: Run App
+          command: go build server.go
       - run:
           name: Run tests
           command: |
